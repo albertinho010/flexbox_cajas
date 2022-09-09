@@ -1,0 +1,84 @@
+/* h2 {
+    border: 2px solid black;
+    width: 100px;
+}
+a {
+    border: 2px solid blue;
+    width: 10000px;
+}
+.mixto {
+    border: 2px solid red;
+    display: inline-block;
+    width:  200px;
+    height: 200px;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.padre {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: blue;
+    /* Indispesable  */
+    display: flex;
+    /* Mueve mi elemento de forma vertical  */
+    flex-direction: column;
+    align-items:center;
+    /* Mueve mi elemeto de forma horizontal  */
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+
+.hijo {
+    width: 30%;
+    height: 30%;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nieto{
+    width: 10%;
+    height: 10%;
+    border: 2px solid yellow;
+}
+
+.madre{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    /* Indispesable  */
+    display: flex;
+    /* Mueve mi elemento de forma vertical  */
+    align-items: center;
+    /* Mueve mi elemeto de forma horizontal  */
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+
+.hija{
+    width: 30%;
+    height: 30%;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.nieta{
+    width: 10%;
+    height: 10%;
+    border: 2px solid yellow;
+}
